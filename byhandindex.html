@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Service Mississauga | Professional Residential & Commercial Cleaning</title>
+    <meta name="description" content="Trusted cleaning services in Mississauga. Deep cleaning, standard cleaning, office cleaning. Reliable, affordable, fast service. Free quotes available.">
+    <meta name="keywords" content="cleaning service Mississauga, residential cleaning, commercial cleaning, office cleaning, deep cleaning Mississauga">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #1e3a8a;
+            --blue: #3b82f6;
+            --light-blue: #dbeafe;
+            --gray: #f1f5f9;
+            --dark: #0f172a;
+            --text: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--navy), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--blue);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--blue);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--navy);
+            transition: 0.3s;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, 
+                rgba(30, 58, 138, 0.95) 0%, 
+                rgba(59, 130, 246, 0.9) 50%,
+                rgba(219, 234, 254, 0.8) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(255,255,255,0.2) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255,255,255,0.15) 0%, transparent 50%);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            33% { transform: translateY(-20px) rotate(1deg); }
+            66% { transform: translateY(10px) rotate(-1deg); }
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 2rem;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1.2rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--navy);
+            box-shadow: 0 20px 40px rgba(255,255,255,0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 30px 60px rgba(255,255,255,0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--navy);
+            transform: translateY(-4px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+        }
+
+        /* Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 6rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--navy), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--text);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-top: 4px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--blue), var(--navy));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, var(--blue), var(--navy));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            color: white;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+
+        /* About */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            height: 400px;
+            background: linear-gradient(135deg, var(--gray), var(--light-blue));
+            border-radius: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-image::before {
+            content: '✨';
+            position: absolute;
+            font-size: 4rem;
+            top: 20%;
+            right: 20%;
+            opacity: 0.1;
+            animation: sparkle 3s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.2) rotate(180deg); }
+        }
+
+        /* Why Choose Us */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--blue), var(--navy));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+
+        /* Before After */
+        .ba-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .ba-item {
+            position: relative;
+        }
+
+        .ba-label {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(30, 58, 138, 0.95);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            z-index: 2;
+        }
+
+        .ba-image {
+            height: 320px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .ba-image:hover {
+            transform: scale(1.02);
+        }
+
+        /* Testimonials */
+        .testimonial-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .testimonial-card {
+            min-width: 100%;
+            background: white;
+            padding: 3rem 2.5rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            text-align: center;
+            opacity: 0.8;
+            transition: all 0.4s ease;
+        }
+
+        .testimonial-card.active {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .stars {
+            color: #fbbf24;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--gray);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: var(--blue);
+            transform: scale(1.3);
+        }
+
+        /* Contact */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.75rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1.25rem;
+            border: 2px solid var(--gray);
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--blue);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            background: var(--gray);
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--navy);
+            color: white;
+            text-align: center;
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--blue);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 2rem 0;
+                transform: translateY(-100vh);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.4s ease;
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-grid,
+            .contact-grid,
+            .ba-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 4rem 0;
+            }
+        }
+
+        /* Scroll Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stagger {
+            transition-delay: calc(0.1s * var(--order));
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Cleaning Service Mississauga</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#why" class="nav-link">Why Us</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Professional Cleaning Services in Mississauga You Can Trust</h1>
+            <p>Spotless results with reliable, fast service. Residential, commercial, and office cleaning by experienced professionals using premium products.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get Free Quote</a>
+                <a href="tel:+16478871067" class="btn btn-outline">Call Now (647) 887-1067</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Cleaning Services</h2>
+                <p class="section-subtitle">Tailored cleaning solutions for homes and businesses</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal stagger" style="--order: 1;">
+                    <div class="service-icon">🧽</div>
+                    <h3>Deep Cleaning</h3>
+                    <p>Comprehensive deep clean reaching every corner and crevice. Perfect for spring cleaning, move-ins/outs, or post-renovation refresh.</p>
+                </div>
+                <div class="service-card reveal stagger" style="--order: 2;">
+                    <div class="service-icon">🧼</div>
+                    <h3>Standard Cleaning</h3>
+                    <p>Regular maintenance cleaning keeping your space consistently fresh. Weekly, bi-weekly, or monthly schedules available.</p>
+                </div>
+                <div class="service-card reveal stagger" style="--order: 3;">
+                    <div class="service-icon">🏢</div>
+                    <h3>Office Cleaning</h3>
+                    <p>Professional workplace cleaning creating healthy, productive environments. Customized schedules for businesses of all sizes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="reveal" style="background: var(--gray);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Our Cleaning Service</h2>
+                <p class="section-subtitle">Trusted by Mississauga families and businesses for exceptional results</p>
+            </div>
+            <div class="about-grid">
+                <div class="reveal stagger" style="--order: 1;">
+                    <h3>Professional Cleaning You Can Rely On</h3>
+                    <p style="margin: 1.5rem 0 2rem; font-size: 1.1rem;">With years of experience serving the Mississauga community, we deliver consistent quality using commercial-grade equipment and eco-friendly products. Fully insured, background-checked staff.</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                            <span style="font-size: 1.5rem;">✅</span> Satisfaction guaranteed
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                            <span style="font-size: 1.5rem;">✅</span> Same-day service available
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.75rem;">
+                            <span style="font-size: 1.5rem;">✅</span> Flexible scheduling
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-image reveal stagger" style="--order: 2;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why" class="reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">Proven results that Mississauga residents and businesses trust</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item reveal stagger" style="--order: 1;">
+                    <div class="stat-number" data-count="2500">0</div>
+                    <h4>Satisfied Clients</h4>
+                    <p>Trusted by homes & businesses</p>
+                </div>
+                <div class="stat-item reveal stagger" style="--order: 2;">
+                    <div class="stat-number" data-count="12">0</div>
+                    <h4>Years Experience</h4>
+                    <p>Local cleaning experts</p>
+                </div>
+                <div class="stat-item reveal stagger" style="--order: 3;">
+                    <div class="stat-number" data-count="24">0</div>
+                    <h4>Hour Response</h4>
+                    <p>Fast quotes & booking</p>
+                </div>
+                <div class="stat-item reveal stagger" style="--order: 4;">
+                    <div class="stat-number" data-count="28">0</div>
+                    <h4>Expert Team</h4>
+                    <p>Trained professionals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before After -->
+    <section id="before-after" class="reveal" style="background: var(--gray);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Real Cleaning Transformations</h2>
+                <p class="section-subtitle">See the difference professional cleaning makes</p>
+            </div>
+            <div class="ba-container">
+                <div class="ba-item reveal stagger" style="--order: 1;">
+                    <div class="ba-label">BEFORE</div>
+                    <div class="ba-image" style="background: linear-gradient(135deg, #64748b, #94a3b8);"></div>
+                </div>
+                <div class="ba-item reveal stagger" style="--order: 2;">
+                    <div class="ba-label">AFTER</div>
+                    <div class="ba-image" style="background: linear-gradient(135deg, #e0f2fe, #bfdbfe);"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Real reviews from satisfied Mississauga customers</p>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonials" id="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Amazing deep clean! They transformed our entire house in one day. Professional, reliable, and worth every penny."</p>
+                        <div style="margin-top: 2rem;">
+                            <strong>Emily Carter</strong><br>
+                            <small>Homeowner, Mississauga</small>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Best office cleaning service we've had. Always on time, attention to detail, and our team loves the clean workspace."</p>
+                        <div style="margin-top: 2rem;">
+                            <strong>David Lee</strong><br>
+                            <small>Office Manager</small>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Weekly cleaning has been a game changer for our busy family. Trustworthy team that gets every detail right."</p>
+                        <div style="margin-top: 2rem;">
+                            <strong>Sarah Patel</strong><br>
+                            <small>Mississauga Resident</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots">
+                    <div class="dot active" data-slide="0"></div>
+                    <div class="dot" data-slide="1"></div>
+                    <div class="dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area -->
+    <section id="area" class="reveal" style="background: var(--gray);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mississauga & Surrounding Areas</h2>
+                <p class="section-subtitle">Fast, reliable service throughout Peel Region</p>
+            </div>
+            <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                <div style="font-size: 1.3rem; margin-bottom: 2rem; padding: 2.5rem; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.1);">
+                    <strong>Serving Mississauga, Brampton, Oakville, Etobicoke & Milton</strong><br>
+                    <small>Fast response times • Same-day service available</small>
+                </div>
+                <a href="#contact" class="btn btn-primary">Book Cleaning Service</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get Your Free Quote</h2>
+                <p class="section-subtitle">Ready for spotless? Contact our team for fast service</p>
+            </div>
+            <div class="contact-grid">
+                <form id="contact-form" class="contact-form reveal stagger" style="--order: 1;">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Service Needed</label>
+                        <select id="service" required>
+                            <option value="">Choose service...</option>
+                            <option value="deep">Deep Cleaning</option>
+                            <option value="standard">Standard Cleaning</option>
+                            <option value="office">Office Cleaning</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message (optional)</label>
+                        <textarea id="message" rows="4" placeholder="Tell us about your cleaning needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Request Free Quote</button>
+                </form>
+                <div class="contact-info reveal stagger" style="--order: 2;">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <div style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.25rem;">+1 (647) 887-1067</div>
+                            <a href="tel:+16478871067" style="color: var(--blue); font-weight: 600;">Call or Text Now</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>Mississauga & Peel Region<br><small>Fast local response</small></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>7 Days a Week<br><small>7AM - 9PM</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#services" class="footer-link">Services</a>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#area" class="footer-link">Areas</a>
+                <a href="#testimonials" class="footer-link">Reviews</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+            <p>&copy; 2024 Cleaning Service Mississauga. Serving Mississauga & surrounding areas. | <a href="tel:+16478871067" class="footer-link" style="color: var(--blue);">+1 647-887-1067</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 10px 40px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // Scroll Reveal Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('active');
+                    }, index * 100);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.stat-number');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = parseInt(counter.dataset.count);
+                    let current = 0;
+                    const increment = target / 100;
+                    
+                    const updateCounter = () => {
+                        if (current < target) {
+                            current += increment;
+                            counter.textContent = Math.ceil(current);
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.textContent = target;
+                        }
+                    };
+                    updateCounter();
+                }
+            });
+        });
+        counters.forEach(counter => counterObserver.observe(counter));
+
+        // Testimonial Slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-card');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+            document.getElementById('testimonials-slider').style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+
+        // Auto slide
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }, 5000);
+
+        // Form Validation
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const service = document.getElementById('service').value;
+
+            if (!name || !phone || !service) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Simulate submission
+            const btn = e.target.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert('Thank you! We will contact you within 24 hours with your free quote.');
+                e.target.reset();
+                btn.textContent = originalText;
+                btn.disabled = false;
+            }, 1500);
+        });
+
+        // Button hover effects
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mouseenter', () => btn.style.transform = 'translateY(-3px)');
+            btn.addEventListener('mouseleave', () => btn.style.transform = 'translateY(0)');
+        });
+    </script>
+</body>
+</html>
